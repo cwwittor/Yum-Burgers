@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/cwwittor/Yum-Burgers/issues"
   },
-  "homepage": "https://github.com/cwwittor/Yum-Burgers#readme"
+  "homepage": "https://github.com/cwwittor/Yum-Burgers#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "mysql": "^2.18.1"
+  }
 }
