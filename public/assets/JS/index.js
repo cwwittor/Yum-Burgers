@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     if (devourBtn) {
       devourBtn.forEach((button) => {
         button.addEventListener("click", (e) => {
+          e.preventDefault();
           const id = e.target.getAttribute("data-id");
           const burgerDevoured = {
             devoured: true,
@@ -21,16 +22,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
             },
             body: JSON.stringify(burgerDevoured),
         }).then((response) => {
-            if (response.ok) {
-                console.log(`changed  to: ${id}`);
-                location.reload("/");
-            } else {
-                alert("something went wrong!");
-            }
+            console.log(`changed  to: ${id}`);
+            location.reload("/");
+        }).catch(err => {
+            alert("something went wrong!");
             });
+          });
         });
-      });
-    }
+      }
+    
   
     const createBurger = document.getElementById("create-form");
   

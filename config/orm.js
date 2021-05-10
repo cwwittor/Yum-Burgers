@@ -14,11 +14,11 @@ const orm = {
         });
     },
     updateOne(nameOfTable, devoured, col, val, cb) {
-        connection.query("UPDATE ?? SET ? WHERE ?? = ?", [nameOfTable, devoured, col, val, cb], (err, result) => {
-            if(err) throw err;
+        connection.query("UPDATE ?? SET ? WHERE ?? = ?", [nameOfTable, devoured, col, val], (err, result) => {
+            if (err) throw err;
             cb(result);
         });
     }
-}
+};
 
 module.exports = orm;
