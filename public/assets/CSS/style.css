@@ -1,0 +1,28 @@
+.burgerAdder {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.burgerAdd {
+    background-color: darkgray;
+}
+
+.burger-container {
+    display: block;
+    text-align: center;
+}
+
+.titleHeader {
+    text-align: center;
+    font-weight: bold;
+}
+
+.burger-eaten {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.burger-uneaten {
+    background-color: blanchedalmond;
+    text-align: center;
+}

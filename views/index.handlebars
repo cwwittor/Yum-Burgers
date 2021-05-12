@@ -16,8 +16,9 @@
             </div>
         </form>
     </div>
+    <hr>
     <div class="container">
-        <h2>Free Uneaten Burgers Here:</h2>
+        <h2 class="burger-uneaten">Free Uneaten Burgers Here:</h2>
         <ul class="list-group burger-list">
             {{#each burgers}}
             {{#unless devoured}}
@@ -29,8 +30,9 @@
             {{/each}}
         </ul>
     </div>
+    <hr>
     <div class="container">
-        <h2>Eaten Burgers Here:</h2>
+        <h2 class="burger-eaten">Eaten Burgers Here:</h2>
         <ul class="list-group burger-list">
             {{#each burgers}}
             {{#if devoured}}
