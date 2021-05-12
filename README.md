@@ -29,7 +29,7 @@
   The license(s) used for this are the following: none
 
   ## Screenshots
-  <img src="public/assets/IMG/Final.PNG" width="350">
+  <img src="public/assets/IMG/Final.PNG" width="700">
 
   ## Contact-Info
   Email: cwwittor@ncsu.edu
